@@ -20,10 +20,10 @@ const TripCard: React.FC<TripCardProps> = ({ city, startDate, endDate, imageUrl 
 
     return (
         <div className=" w-64 outline outline-1 outline-gray-200">
-            <img src={imageUrl} alt={city} className="w-full h-48 object-cover rounded-t-lg" />
+            <img src={imageUrl} alt={city} className="w-full h-48 object-cover" />
             <div className="p-4">
-                <h2 className="text-xl font-bold mb-2">{city}</h2>
-                <p>{formattedStartDate} - {formattedEndDate}</p>
+                <p className="text-l font-bold mb-2">{city}</p>
+                <p className="text-l text-gray-400">{formattedStartDate} - {formattedEndDate}</p>
             </div>
         </div>
     );
